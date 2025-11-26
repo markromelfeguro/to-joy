@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-800 min-h-screen flex items-center justify-center p-4">
+
+    <div class="absolute inset-0 z-0 bg-[linear-gradient(315deg,_#E1BEE7_0%,_#F3E5F5_20%,_#FCE4EC_40%,_#FFF0F5_60%,_#F8BBD9_80%,_#E1BEE7_100%)]"></div>
+    
+    <div id="particles-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+    
+    <div class="relative bg-white w-full max-w-md md:max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex flex-col items-center py-12 px-4 md:py-24 md:px-16 bg-[radial-gradient(#f3e8ff_2px,transparent_2px),radial-gradient(#e0f2fe_2px,transparent_2px)] bg-[length:20px_20px] [background-position:0_0,10px_10px] animate-float">
+        
+        <div class="relative w-64 h-56 md:w-[500px] md:h-[450px] mb-8 md:mb-16 flex-shrink-0">
+            
+            <div class="heart-mask w-full h-full bg-white">
+                <ul id="carousel-track" class="flex h-full w-full transition-transform duration-700 ease-in-out">
+                    
+                    <li class="h-full min-w-full shrink-0">
+                        <img src="/Images/1.jpg" 
+                             alt="Couple 1" 
+                             loading="eager"
+                             class="h-full w-full object-conver object-center block">
+                    </li>
+                    
+                    <li class="h-full min-w-full shrink-0">
+                        <img src="/Images/2.jpg" 
+                             alt="Couple 2" 
+                             class="h-full w-full object-conver object-center block">
+                    </li>
+                    
+                    <li class="h-full min-w-full shrink-0">
+                        <img src="Images/3.jpg" 
+                             alt="Couple 3" 
+                             class="h-full w-full object-conver object-center block">
+                    </li>
+
+                    <li class="h-full min-w-full shrink-0">
+                        <img src="Images/4.jpg" 
+                             alt="Couple 3" 
+                             class="h-full w-full object-conver object-center block">
+                    </li>
+
+                    <li class="h-full min-w-full shrink-0">
+                        <img src="Images/5.jpg" 
+                             alt="Couple 3" 
+                             class="h-full w-full object-conver object-center block">
+                    </li>
+                </ul>
+            </div>
+
+            <svg class="absolute inset-0 w-full h-full pointer-events-none text-purple-300 drop-shadow-sm" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                stroke="currentColor" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+
+        <div class="text-center w-full flex flex-col items-center z-10">
+            
+            <h2 class="text-sm md:text-2xl tracking-[0.3em] text-gray-500 font-bold uppercase mb-6 md:mb-12">
+                Happy Anniversary
+            </h2>
+
+            <div class="relative flex items-baseline justify-center gap-3 md:gap-6 mb-4 md:mb-8">
+                <svg class="w-4 h-4 md:w-8 md:h-8 text-pink-300 absolute -left-6 md:-left-12 top-2 md:top-6 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                
+                <span class="text-purple-300 font-cursive-heavy text-5xl md:text-8xl lg:text-9xl">To</span>
+                <span class="text-purple-400 font-cursive-heavy text-6xl md:text-9xl lg:text-[10rem]">The One</span>
+                
+                <svg class="w-4 h-4 md:w-8 md:h-8 text-purple-300 absolute -right-4 md:-right-10 top-0 md:top-4 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+            </div>
+
+            <div class="font-handwritten text-blue-400 font-bold text-3xl md:text-6xl tracking-wide my-4 md:my-8 transform -rotate-2 whitespace-nowrap">
+                I WANT TO ANNOY
+            </div>
+
+            <div class="font-handwritten text-gray-600 text-lg md:text-3xl tracking-[0.25em] uppercase font-bold mt-2 md:mt-4">
+                for the rest
+            </div>
+
+            <div class="relative mt-4 md:mt-10 pb-4">
+                 <svg class="w-4 h-4 md:w-8 md:h-8 text-pink-400 absolute left-0 md:left-6 top-4 md:top-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                <div class="text-pink-400 font-cursive-heavy text-6xl md:text-9xl transform -rotate-6 px-4">
+                    of my days!
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
