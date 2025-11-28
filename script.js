@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
         heart.style.color = randomColor;
 
-        const size = Math.random() * 125 + 110;
+        const size = Math.random() * 150 + 135;
         heart.style.width = `${size}px`;
         heart.style.height = `${size}px`;
 
