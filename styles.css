@@ -45,7 +45,6 @@
 .heart-particle {
     position: absolute;
     bottom: -50px;
-    color: rgba(249, 168, 212, 0.6);
     pointer-events: none;
     animation-name: floatUp;
     animation-timing-function: linear;

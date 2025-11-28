@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anniversary Card</title>
+    <title>To Gippeum</title>
+    <link rel="shortcut icon" href="./Images/1.jpg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-800 min-h-screen flex items-center justify-center p-4">
@@ -16,6 +18,19 @@
     
     <div class="relative bg-white w-full max-w-md md:max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex flex-col items-center py-12 px-4 md:py-24 md:px-16 bg-[radial-gradient(#f3e8ff_2px,transparent_2px),radial-gradient(#e0f2fe_2px,transparent_2px)] bg-[length:20px_20px] [background-position:0_0,10px_10px] animate-float">
         
+        <div class="absolute top-14 right-10 z-20 w-max">
+            <div id="clickTooltip"
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-white text-pink-700 font-bold rounded-full shadow-xl whitespace-nowrap border-2 border-pink-500
+                        transition-all duration-500 ease-in-out z-30 animate-jiggle-once">
+                Click Me!
+            </div>
+
+            <button title="Open Letter" id="openLetterBtn"
+                    class="p-4 rounded-full bg-pink-500 hover:bg-pink-600 transition-transform duration-300 ease-in-out shadow-lg transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:ring-opacity-75 animate-bounce-slow">
+                <i class="fas fa-heart text-white text-xl md:text-2xl"></i>
+            </button>
+        </div>
+        
         <div class="relative w-64 h-56 md:w-[500px] md:h-[450px] mb-8 md:mb-16 flex-shrink-0">
             
             <div class="heart-mask w-full h-full bg-white">
@@ -23,34 +38,29 @@
                     
                     <li class="h-full min-w-full shrink-0">
                         <img src="/Images/1.jpg" 
-                             alt="Couple 1" 
+                             alt="Image 1" 
                              loading="eager"
                              class="h-full w-full object-conver object-center block">
                     </li>
                     
                     <li class="h-full min-w-full shrink-0">
-                        <img src="/Images/2.jpg" 
-                             alt="Couple 2" 
+                        <img src="/Images/2.jpeg" 
+                             alt="Image 2" 
                              class="h-full w-full object-conver object-center block">
                     </li>
                     
                     <li class="h-full min-w-full shrink-0">
-                        <img src="Images/3.jpg" 
-                             alt="Couple 3" 
+                        <img src="Images/3.jpeg" 
+                             alt="Image 3" 
                              class="h-full w-full object-conver object-center block">
                     </li>
 
                     <li class="h-full min-w-full shrink-0">
-                        <img src="Images/4.jpg" 
-                             alt="Couple 3" 
+                        <img src="Images/4.jpeg" 
+                             alt="Image 3" 
                              class="h-full w-full object-conver object-center block">
                     </li>
 
-                    <li class="h-full min-w-full shrink-0">
-                        <img src="Images/5.jpg" 
-                             alt="Couple 3" 
-                             class="h-full w-full object-conver object-center block">
-                    </li>
                 </ul>
             </div>
 
@@ -64,20 +74,20 @@
         <div class="text-center w-full flex flex-col items-center z-10">
             
             <h2 class="text-sm md:text-2xl tracking-[0.3em] text-gray-500 font-bold uppercase mb-6 md:mb-12">
-                Happy Anniversary
+                I Love You
             </h2>
 
             <div class="relative flex items-baseline justify-center gap-3 md:gap-6 mb-4 md:mb-8">
                 <svg class="w-4 h-4 md:w-8 md:h-8 text-pink-300 absolute -left-6 md:-left-12 top-2 md:top-6 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
                 
                 <span class="text-purple-300 font-cursive-heavy text-5xl md:text-8xl lg:text-9xl">To</span>
-                <span class="text-purple-400 font-cursive-heavy text-6xl md:text-9xl lg:text-[10rem]">The One</span>
+                <span class="text-purple-400 font-cursive-heavy text-4xl md:text-9xl lg:text-[10rem]">The One</span>
                 
                 <svg class="w-4 h-4 md:w-8 md:h-8 text-purple-300 absolute -right-4 md:-right-10 top-0 md:top-4 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
             </div>
 
             <div class="font-handwritten text-blue-400 font-bold text-3xl md:text-6xl tracking-wide my-4 md:my-8 transform -rotate-2 whitespace-nowrap">
-                I WANT TO ANNOY
+                I WANT TO TALK
             </div>
 
             <div class="font-handwritten text-gray-600 text-lg md:text-3xl tracking-[0.25em] uppercase font-bold mt-2 md:mt-4">
@@ -89,6 +99,37 @@
                 <div class="text-pink-400 font-cursive-heavy text-6xl md:text-9xl transform -rotate-6 px-4">
                     of my days!
                 </div>
+            </div>
+        </div>
+
+        <div id="letterModal" class="fixed inset-0 bg-black bg-opacity-70 z-30 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-2xl max-w-lg w-full transform scale-90 transition-transform duration-300 relative border-8 border-pink-200 letter-paper">
+                
+                <button id="closeLetterBtn" class="absolute top-3 right-3 text-gray-500 hover:text-red-500 transition duration-150 p-2 rounded-full bg-gray-100 hover:bg-red-50" aria-label="Close letter">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+
+                <h3 class="font-cursive-heavy text-pink-500 text-4xl md:text-5xl mb-6 text-center transform rotate-1">
+                    My Dearest Joy,
+                </h3>
+                
+                <p class="font-handwritten text-gray-700 text-lg md:text-2xl leading-relaxed mb-4">
+                    Every moment I talk to you is like finding a hidden, beautiful melody. You bring so much light and laughter into my life, and I feel incredibly lucky to have you.
+                </p>
+                
+                <p class="font-handwritten text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
+                    I still remember the first time we meet.
+                </p>
+
+                <p class="font-handwritten text-blue-400 text-xl md:text-2xl text-right mt-6">
+                    With all my love,
+                </p>
+                <div class="flex flex-row gap-2 items-center justify-end">
+                    <p class="font-cursive-heavy text-purple-400 text-3xl md:text-4xl text-right">
+                        ❤️ 
+                    </p>
+                    <img src="./Images/Mark.jpg" alt="Mark" class="rounded-full h-16 w-16">
+               </div>
             </div>
         </div>
 
